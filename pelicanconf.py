@@ -35,3 +35,7 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 THEME = '../pelican-themes/pelican-bootstrap3'
+
+STATIC_PATHS = ['images', 'extra/CNAME', 'extra/robots.txt']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
+                       'extra/robots.txt': {'path': 'robots.txt'}}
