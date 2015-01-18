@@ -5,7 +5,7 @@ Author: Just Alfred
 Summary: Welcome to my new blog.
 
 Back when I was in grad school, I started a blog to satisfy an itch to write.
-I used blogger at the time because it was free and easy to set up.
+I used Blogger at the time because it was free and easy to set up.
 Now it seems the reputation of that platform has gone the way of AOL.
 Also, now that I work in the software industry, I have new blogging needs.
 So I've decided to restart my blog in this new format.
