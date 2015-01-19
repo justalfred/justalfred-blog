@@ -9,6 +9,7 @@ SITEURL = ''
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
+DEFAULT_DATE_FORMAT = '(%a) %Y-%m-%d'
 
 DEFAULT_LANG = 'en'
 
@@ -20,14 +21,15 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
+#          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Twitter', 'https://twitter.com/Alphrabet'),
+          ('Github', 'https://github.com/justalfred'),
+          )
 
 DEFAULT_PAGINATION = 10
 
@@ -39,3 +41,5 @@ THEME = '../pelican-themes/pelican-bootstrap3'
 STATIC_PATHS = ['images', 'extra/CNAME', 'extra/robots.txt']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
                        'extra/robots.txt': {'path': 'robots.txt'}}
+
+TYPOGRIFY = True
