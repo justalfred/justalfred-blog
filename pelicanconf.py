@@ -43,3 +43,6 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
                        'extra/robots.txt': {'path': 'robots.txt'}}
 
 TYPOGRIFY = True
+
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['tag_cloud']
