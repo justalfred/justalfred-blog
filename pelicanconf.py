@@ -31,16 +31,26 @@ SOCIAL = (('Twitter', 'https://twitter.com/Alphrabet'),
           ('Github', 'https://github.com/justalfred'),
           )
 
+TWITTER_CARDS = True
+TWITTER_USERNAME = 'Alphrabet'
+TWITTER_WIDGET_ID = '627642962491625472'
+
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 THEME = 'mytheme'
+BOOTSTRAP_THEME = 'flatly'
+CUSTOM_CSS = 'static/custom.css'
 
-STATIC_PATHS = ['images', 'extra/CNAME', 'extra/robots.txt']
+STATIC_PATHS = ['images', 'extra/CNAME',
+                'extra/robots.txt', 'extra/custom.css'
+                ]
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
-                       'extra/robots.txt': {'path': 'robots.txt'}}
+                       'extra/robots.txt': {'path': 'robots.txt'},
+                       'extra/custom.css': {'path': 'static/custom.css'},
+                       }
 
 TYPOGRIFY = True
 
