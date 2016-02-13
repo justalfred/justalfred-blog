@@ -10,11 +10,11 @@
     {% if article %}
         {% if article.title %}
             <meta property="twitter:title"
-                  content="{{ SITEURL }}/{{ article.title }}"/>
+                  content="{{ article.title }}"/>
         {% endif %}
         {% if article.summary %}
             <meta property="twitter:description"
-                  content="{{ SITEURL }}/{{ article.summary }}"/>
+                  content="{{ article.summary }}"/>
         {% endif %}
         {% if article.og_image %}
             <meta property="twitter:image"
