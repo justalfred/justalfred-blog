@@ -2,6 +2,7 @@ Title: Caseo-exploration
 Date: 2016-02-13
 Author: Just Alfred
 Slug: caseo_exploration
+Summary: Boundless curiosity and logical models
 
 Day after day, month after month, I would aimlessly poke through the company
 kitchen looking for snacks I knew weren't there. I knew what was behind all the cupboard
