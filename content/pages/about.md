@@ -2,7 +2,7 @@ Title: About the Site
 Author: Just Alfred
 
 Hello. I'm just another Alfred.
-I'm a data scientist at [White Ops](www.whiteops.com).
+I'm a data scientist at [White Ops](http://www.whiteops.com).
 Formerly, I was on the analytics team at [Paperless Post](http://www.paperlesspost.com/), and before that I was on the Science team at [Bitly](http://bitly.com/).
 Doctorate in Experimental Condensed Matter Physics.
 Math and music nerd.
