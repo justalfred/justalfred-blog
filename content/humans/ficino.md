@@ -90,3 +90,11 @@ society.
 and observations here, but as an outsider to the domain, I don't know which
 are well established and which have yet to be replicated. So I decided not
 to reference literature whose quality I don't understand.)
+
+postscript 2016-05-28: After a couple months letting this stew, I think the
+call to action here shouldn't be to pretty ourselves up. Not everyone wants to
+be the object of attention. We **should** try to embody the virtues we admire
+anyway. I don't have a problem with that part. So the real call to action is
+just to notice those who choose to combine physical appeal with other virtues
+and not see it as distracting from those virtues. It's ok for a professor
+to be hot in more ways than one.
