@@ -45,7 +45,8 @@ BOOTSTRAP_THEME = 'flatly'
 CUSTOM_CSS = 'static/custom.css'
 
 STATIC_PATHS = ['images', 'extra/CNAME',
-                'extra/robots.txt', 'extra/custom.css'
+                'extra/robots.txt', 'extra/custom.css',
+                'html'
                 ]
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
                        'extra/robots.txt': {'path': 'robots.txt'},
@@ -56,3 +57,5 @@ TYPOGRIFY = True
 
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['tag_cloud']
+
+READERS = {'html': None}
