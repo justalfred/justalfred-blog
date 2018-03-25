@@ -56,7 +56,7 @@ deconstruction, defining something by what it is not, and elevating subjective e
 giving voice to those experiences at the margins and boundaries which force us to reconsider our received notions.
 
 I want to close as our class closed:
-A reading of Emily Dickenson through the various literary traditions we had covered.
+A reading of Emily Dickinson through the various literary traditions we had covered.
 Copied here from the [Poetry Foundation](https://www.poetryfoundation.org/poems/52737/my-life-had-stood-a-loaded-gun-764):
 
 > My Life had stood - a Loaded Gun -<br>
@@ -114,7 +114,7 @@ A younger me would be frustrated by the absence of a correct answer,
 but how human (and not algorithmic) it is to be able to study such a sententious poem,
 excavating signs and symbols,
 interpreting from several contexts without a need to assign a ranking of the best or most probable readings.
-Indeed, accepting all reading simultaneously.
+Indeed, accepting all readings simultaneously.
 The ambiguity is precisely the source of its richness.
 I hope that my technical readers can truly appreciate this.
 As [Jacob Bronowski](https://en.wikipedia.org/wiki/Jacob_Bronowski) said,
