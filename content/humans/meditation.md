@@ -134,3 +134,8 @@ but don’t fall into the trap of being so self-absorbed that we fail our commun
 This is the understanding I’ve reached at my early level of experience with meditation.
 Your mileage will vary.
 I hope these thoughts help you shape your own practice into a form that feels right for you.
+
+**EDIT (2018-03-24)**: My friend pointed me to [this succinct, practical advice](https://www.reddit.com/r/leaves/comments/85u18y/some_notes_and_encouragement_on_meditation_from/?st=JF2J7D5G&sh=7a463fa1)
+on meditating. I found it a very useful reminder. Highlight:
+
+> My first suggestion is that you begin meditation with an attitude that it's something you are going to *experience*,, not something you are going to *do*.
