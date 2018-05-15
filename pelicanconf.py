@@ -32,8 +32,6 @@ SOCIAL = (('Twitter', 'https://twitter.com/Alphrabet'),
           )
 
 TWITTER_CARDS = True
-TWITTER_USERNAME = 'Alphrabet'
-TWITTER_WIDGET_ID = '627642962491625472'
 
 DEFAULT_PAGINATION = 10
 
