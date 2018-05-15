@@ -40,7 +40,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-THEME = 'mytheme'
+THEME = '../pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
 CUSTOM_CSS = 'static/custom.css'
 
@@ -56,6 +56,7 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
 TYPOGRIFY = True
 
 PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['tag_cloud']
+PLUGINS = ['tag_cloud', 'i18n_subsites']
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 READERS = {'html': None}
