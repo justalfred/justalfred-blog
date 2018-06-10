@@ -58,3 +58,5 @@ PLUGINS = ['tag_cloud', 'i18n_subsites']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 READERS = {'html': None}
+
+TAG_CLOUD_SORTING = 'size-rev'
