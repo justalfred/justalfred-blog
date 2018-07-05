@@ -64,7 +64,7 @@ I tried and failed to make sense of the particulars, so I’ve drawn from it my 
 My version of it is that we each change over time,
 we’re all composed of constituent conscious elements,
 and we’re all part of greater social organisms.
-I’m [not the same person as 12-year-old Alfred](https://blog.justalfred.com/i-am-not-who-i-was.html).
+I’m [not the same person as 12-year-old Alfred]({filename}not_me.md).
 One part of me can handle strolling through a park while
 a different part listens to music and another contemplates the weather.
 My team, my family, my company, my city, each has a personality and [memory](https://en.wikipedia.org/wiki/Meme),

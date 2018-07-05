@@ -17,7 +17,7 @@ and that it will be the pursuit of beauty that leads me to them.
 How’s that search going? Some highlights:
 
 I mentioned the [Multaka project](http://www.smb.museum/en/museums-institutions/museum-fuer-islamische-kunst/collection-research/research-cooperation/multaka.html)
-in [my last post](http://blog.justalfred.com/empathy-in-its-place.html).
+in [my last post]({filename}empathy.md).
 I love this example of community-level, considered, intentional empathy.
 When we open ourselves to those who are different from us, we can learn greater human truths in return.
 

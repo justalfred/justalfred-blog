@@ -8,7 +8,7 @@ Summary: When the answer isn't clear, it might mean it doesn't need to be.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yin_yang.svg/240px-Yin_yang.svg.png)
 </div>
 
-[A little while back](https://blog.justalfred.com/literary-theory.html), I tried to illustrate the value of accepting ambiguity via Emily Dickinson and Jacob Bronowski.
+[A little while back]({filename}/literature/literary_theory.md), I tried to illustrate the value of accepting ambiguity via Emily Dickinson and Jacob Bronowski.
 Poetry and Science.
 This topic bears expansion, so now I expand.
 I’ve said very little to data scientists to date, even though it’s my field.
