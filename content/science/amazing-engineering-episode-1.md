@@ -15,7 +15,11 @@ feats.
 For the first episode, I'd like to start with something I first learned
 about as an undergrad. See if you can guess what this is:  
   
-[![](http://d1jqu7g1y74ds1.cloudfront.net/wp-content/uploads/2010/08/sunspot.jpg)](http://d1jqu7g1y74ds1.cloudfront.net/wp-content/uploads/2010/08/sunspot.jpg)
+<figure>
+  <a href="http://d1jqu7g1y74ds1.cloudfront.net/wp-content/uploads/2010/08/sunspot.jpg">
+    <img src="http://d1jqu7g1y74ds1.cloudfront.net/wp-content/uploads/2010/08/sunspot.jpg" alt="yellow-orange, flecked surface collapsing into a dark hole in the center">
+  </a>
+</figure>
   
 If you guessed "sea creature's eye", you would be wrong. If you guessed
 anything biological, you would be wrong. It's actually an extremely

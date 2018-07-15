@@ -5,7 +5,11 @@ Author: Just Alfred
 Summary: When the answer isn't clear, it might mean it doesn't need to be.
 
 <div style="text-align:center" markdown="1">
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yin_yang.svg/240px-Yin_yang.svg.png)
+<figure>
+  <a href="https://en.wikipedia.org/wiki/File:Yin_yang.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yin_yang.svg/240px-Yin_yang.svg.png" alt="Yin-Yang symbol">
+  </a>
+<figure>
 </div>
 
 [A little while back]({filename}/literature/literary_theory.md), I tried to illustrate the value of accepting ambiguity via Emily Dickinson and Jacob Bronowski.

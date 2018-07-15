@@ -24,4 +24,8 @@ And with these thoughts in mind, I made my own art.
 
 Self Portrait: Relinquishing My Self
 
-[![]({filename}../images/self-portrait1.jpg)]({filename}../images/self-portrait1.jpg)
+<figure>
+  <a href="{filename}../images/self-portrait1.jpg">
+    <img src="{filename}../images/self-portrait1.jpg" alt="Silver-toned, textured surface with a dark figure reflected in the center">
+  </a>
+<figure>

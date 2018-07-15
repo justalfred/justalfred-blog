@@ -65,4 +65,8 @@ explanation at what I have found so far. I have accepted the assistance
 of a good friend with a doctorate in CS (AI) so I hope that we will have
 something fun for you soon!  
 
-[![]({filename}../images/tritone.png)]({filename}../images/tritone.png)
+<figure>
+  <a href="{filename}../images/tritone.png">
+    <img src="{filename}../images/tritone.png" alt="Plot titled, 'Tritone Probability by Decade'">
+  </a>
+</figure>

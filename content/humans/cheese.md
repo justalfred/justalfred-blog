@@ -22,7 +22,11 @@ at those Babybel cheeses and wondered what an 18-month Babybel cheese would look
 Finally, I decided there was only one way to find out.
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------
-  [![]({filename}../images/cheese_experiment.jpg)]({filename}../images/cheese_experiment.jpg)
+<figure>
+  <a href="{filename}../images/cheese_experiment.jpg">
+    <img src="{filename}../images/cheese_experiment.jpg" alt="Four Babybel cheeses marked with different ages, ranging from 0 to 18 months, looking progressively wetter and darker.">
+  </a>
+</figure>
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------
 
 Last week marked the 18-month anniversary of the oldest in my collection. I didn't collect

@@ -40,7 +40,7 @@ The response is humility and the release of much burden.
 
 <figure>
   <a href="{filename}../images/falls.jpg">
-    <img src="{filename}../images/falls.jpg" width="504">
+    <img src="{filename}../images/falls.jpg" alt="Image of a series of rocky waterfalls with trees on either side." width="504">
   </a>
   <figcaption>Imagine this in an aeon....</figcaption>
 </figure>
@@ -62,7 +62,7 @@ There’s a resonance here with Buddhism’s second noble truth.
 
 <figure>
   <a href="{filename}../images/michael_heizer.jpg">
-    <img src="{filename}../images/michael_heizer.jpg" width="504">
+    <img src="{filename}../images/michael_heizer.jpg" alt="Expansive gallery space with gaping holes in the ground with various geometric profiles." width="504">
   </a>
   <figcaption><a href="https://www.diaart.org/collection/collection/heizer-michael-north-east-south-west-19672002-2003-174-1-4"><i>North, East, South, West</i></a>, Michael Heizer</figcaption>
 </figure>
