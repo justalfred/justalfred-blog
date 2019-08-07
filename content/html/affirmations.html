@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+#base {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    font: 12px sans-serif;
+		color: red;
+    background: indigo;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    vertical-align: top;
+}
+
+div.modal {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    font: 12px sans-serif;
+		color: red;
+    background: indigo;
+    border: 0px;
+    border-radius: 8px;
+    margin: auto;
+    float: left;
+}
+
+#clear {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#Body {
+    font-style: italic;
+}
+
+</style>
+<body bgcolor="#16161d">
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script>
+
+var margin = {top: 25, right: 25, bottom: 25, left: 25},
+    width = 640 - margin.left - margin.right,
+    height = 750 - margin.top - margin.bottom;
+
+var x1 = width/3, x2 = width*2/3,
+	  y1 = 150, y2 = 350, y3 = 550,
+	  d = 25;
+
+var base = d3.select("body").append("div")
+             .attr("id", "base");
+
+var div = base.append("div")
+    .attr("class", "tooltip")
+    .style("text-align", "center")
+    .style("opacity", 0);
+
+var svg = base.append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform",
+              "translate(" + margin.left + "," + margin.top + ")");
+
+svg.append("text")
+     .attr("id", "title")
+     .attr("transform", "translate(" + (width/2) + " , 30)")
+     .style("text-anchor", "middle")
+     .attr("font-family", "Sans-serif")
+     .attr("font-size", 40)
+     .attr("fill", "plum")
+     .text("Affirmations for My Ideal Self...");
+
+function trait_label(svg, x, y, endanchor, label, caption) {
+  svg.append("text")
+       .attr("class", "traits")
+       .attr("id", label.split(" ")[0])
+       .attr("transform", "translate(" + x + " , " + y + ")")
+       .style("text-anchor", endanchor)
+       .text(label)
+       .on("mouseover", function() {
+           div.transition()
+              .duration(200)
+              .style("opacity", .9);
+           div.html(caption)
+              .style("left", (d3.event.pageX) + "px")	
+              .style("top", (d3.event.pageY) + "px");
+           })
+       .on("click", function() {
+           div2 = base.append("div")
+               .attr("class", "modal");
+           div2.transition()
+               .duration(200);
+           div2.style("opacity", .9)
+               .html(caption);
+
+           div3 = base.append("div")
+               .attr("id", "clear");
+           div3.on("click", function() {
+                   div2.transition()
+                      .duration(200)
+                      .remove();
+                   div3.remove();
+               });
+           });
+}
+
+trait_label(svg, x1-d, y1, "end", "Memory",
+	"I will review and engage with what<br>I experience, hear, and read to honor others' gifts");
+trait_label(svg, x2+d, y1, "start", "Presence",
+	"I will be present and aware of myself<br>and my company, including the unspoken");
+trait_label(svg, x1-d, y2, "end", "Reason",
+	"I will use reason to prepare myself<br>to make good decisions quickly");
+trait_label(svg, x2+d, y2, "start", "Action",
+	"I will not let discomfort, fear,<br>or laziness delay action;<br>I will develop habits to live my ideas");
+trait_label(svg, x1-d, y3, "end", "Humility",
+	"I will never forget that I own, know, am nothing,<br>but am rather a part of larger wholes");
+trait_label(svg, x2+d, y3, "start", "Confidence",
+	"I will be passionate and committed<br>to my plans and decisions");
+trait_label(svg, width/2, 700, "middle", "Body and Mind",
+	"I will foster focus, flexibility, balance, and stamina<br>in my body and mind as a prerequisite<br>to realizing my potential");
+
+svg.selectAll(".traits")
+     .attr("font-family", "Sans-serif")
+     .attr("font-size", 30)
+     .attr("fill", "SkyBlue")
+     .attr("dominant-baseline", "middle")
+     .on("mouseout", function() {
+         div.transition()
+            .duration(500)
+            .style("opacity", 0);
+     });
+
+function connector(svg, x1, x2, y1, y2, cls, id, caption) {
+  svg.append("line")
+       .attr("class", cls)
+       .attr("id", id)
+       .attr("x1", x1)
+       .attr("y1", y1)
+       .attr("x2", x2)
+       .attr("y2", y2)
+       .on("mouseover", function() {
+           div.transition()
+              .duration(200)
+              .style("opacity", .9);
+           div.html(caption)
+              .style("left", (d3.event.pageX) + "px")	
+              .style("top", (d3.event.pageY) + "px");
+           })
+       .on("click", function() {
+           div2 = base.append("div")
+               .attr("class", "modal");
+           div2.transition()
+               .duration(200);
+           div2.style("opacity", .9)
+               .html(caption);
+
+           div3 = base.append("div")
+               .attr("id", "clear");
+           div3.on("click", function() {
+                   div2.transition()
+                      .duration(500)
+                      .remove();
+                   div3.remove();
+               });
+           });
+}
+
+connector(svg, x1, x2, y1, y1, "balance", "balance1",
+    "whatever");
+connector(svg, x1, x2, y2, y2, "balance", "balance2",
+    "whatever");
+connector(svg, x1, x2, y3, y3, "balance", "balance3",
+    "whatever");
+
+connector(svg, x1-1.5*d, x1-1.5*d, y1+d, y2-d, "depends", "depends1",
+    "whatever");
+connector(svg, x2+1.5*d, x2+1.5*d, y1+d, y2-d, "depends", "depends2",
+    "whatever");
+connector(svg, x1-1.5*d, x1-1.5*d, y2+d, y3-d, "depends", "depends3",
+    "whatever");
+connector(svg, x2+1.5*d, x2+1.5*d, y2+d, y3-d, "depends", "depends4",
+    "whatever");
+
+connector(svg, x1, x2, y1+d, y2-d, "supports", "supports1",
+    "whatever");
+connector(svg, x1, x2, y2-d, y1+d, "supports", "supports2",
+    "whatever");
+connector(svg, x1, x2, y2+d, y3-d, "supports", "supports3",
+    "whatever");
+connector(svg, x1, x2, y3-d, y2+d, "supports", "supports4",
+    "whatever");
+
+svg.selectAll("line")
+   .attr("stroke-width", 6)
+   .on("mouseout", function() {
+       div.transition()
+          .duration(500)
+          .style("opacity", 0);
+   });
+
+svg.selectAll(".balance")
+   .attr("stroke", "red");
+
+svg.selectAll(".depends")
+   .attr("stroke", "green");
+
+svg.selectAll(".supports")
+   .attr("stroke", "blue");
+
+</script>
+</body>
