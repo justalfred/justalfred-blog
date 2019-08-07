@@ -46,6 +46,25 @@ div.modal {
     font-style: italic;
 }
 
+.balance {
+    stroke: red;
+}
+
+.depends {
+    stroke: green;
+}
+
+.supports {
+    stroke: blue;
+}
+
+.labelb {
+    font-family: Sans-serif;
+    font-size: 10;
+    dominant-baseline: middle;
+    fill: red;
+}
+
 </style>
 <body bgcolor="#16161d">
 
@@ -55,7 +74,7 @@ div.modal {
 
 var margin = {top: 25, right: 25, bottom: 25, left: 25},
     width = 640 - margin.left - margin.right,
-    height = 750 - margin.top - margin.bottom;
+    height = 730 - margin.top - margin.bottom;
 
 var x1 = width/3, x2 = width*2/3,
 	  y1 = 150, y2 = 350, y3 = 550,
@@ -112,8 +131,8 @@ function trait_label(svg, x, y, endanchor, label, caption) {
                .attr("id", "clear");
            div3.on("click", function() {
                    div2.transition()
-                      .duration(200)
-                      .remove();
+                       .duration(200)
+                       .remove();
                    div3.remove();
                });
            });
@@ -131,7 +150,7 @@ trait_label(svg, x1-d, y3, "end", "Humility",
 	"I will never forget that I own, know, am nothing,<br>but am rather a part of larger wholes");
 trait_label(svg, x2+d, y3, "start", "Confidence",
 	"I will be passionate and committed<br>to my plans and decisions");
-trait_label(svg, width/2, 700, "middle", "Body and Mind",
+trait_label(svg, width/2, 675, "middle", "Body and Mind",
 	"I will foster focus, flexibility, balance, and stamina<br>in my body and mind as a prerequisite<br>to realizing my potential");
 
 svg.selectAll(".traits")
@@ -213,14 +232,65 @@ svg.selectAll("line")
           .style("opacity", 0);
    });
 
+function labelb(x, y, ta, text) {
+    svg.append("text")
+       .attr("class", "labelb")
+       .attr("transform", "translate(" + Math.floor(x) + " , " + Math.floor(y) + ")")
+       .style("text-anchor", ta)
+       .text(text)
+    svg.transition()
+       .duration(200)
+       .style("opacity", .9);
+};
+line = svg.select("#balance1")
+line.on("mouseover", function() {
+        div.transition()
+           .duration(200)
+           .style("opacity", .9);
+        div.html("whatever")
+           .style("left", (d3.event.pageX) + "px")	
+           .style("top", (d3.event.pageY) + "px");
+
+        labelb(x1-d, y1+d/2, "start", "breadth")
+        labelb(x2+d, y1+d/2, "end", "depth")
+        labelb((x1+x2)/2, y1-d/2, "middle", "balances")
+        });
+line = svg.select("#balance2")
+line.on("mouseover", function() {
+        div.transition()
+           .duration(200)
+           .style("opacity", .9);
+        div.html("whatever")
+           .style("left", (d3.event.pageX) + "px")	
+           .style("top", (d3.event.pageY) + "px");
+
+        labelb(x1-d, y2+d/2, "start", "ideas")
+        labelb(x2+d, y2+d/2, "end", "habits")
+        labelb((x1+x2)/2, y2-d/2, "middle", "balances")
+        });
+line = svg.select("#balance3")
+line.on("mouseover", function() {
+        div.transition()
+           .duration(200)
+           .style("opacity", .9);
+        div.html("whatever")
+           .style("left", (d3.event.pageX) + "px")	
+           .style("top", (d3.event.pageY) + "px");
+
+        labelb(x1-d, y3+d/2, "start", "others")
+        labelb(x2+d, y3+d/2, "end", "self")
+        labelb((x1+x2)/2, y3-d/2, "middle", "balances")
+        });
 svg.selectAll(".balance")
-   .attr("stroke", "red");
-
-svg.selectAll(".depends")
-   .attr("stroke", "green");
-
-svg.selectAll(".supports")
-   .attr("stroke", "blue");
+	 .on("mouseout", function() {
+        div.transition()
+           .duration(500)
+           .style("opacity", 0);
+        svg.selectAll(".labelb")
+           .transition()
+           .duration(500)
+           .remove();
+        });
 
 </script>
 </body>
