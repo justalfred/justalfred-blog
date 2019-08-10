@@ -10,28 +10,16 @@
     align-items: center;
 }
 
-div.tooltip {
+.popup {
     position: absolute;
     text-align: center;
     padding: 10px;
-    font: 12px sans-serif;
-		color: red;
-    background: indigo;
+    font: 16px Arial;
+    font-style: italic;
+    color: MidnightBlue;
+    background: AliceBlue;
     border: 0px;
-    border-radius: 8px;
-    pointer-events: none;
-    vertical-align: top;
-}
-
-div.modal {
-    position: absolute;
-    text-align: center;
-    padding: 10px;
-    font: 12px sans-serif;
-		color: red;
-    background: indigo;
-    border: 0px;
-    border-radius: 8px;
+    border-radius: 3px;
     margin: auto;
     float: left;
 }
@@ -46,251 +34,358 @@ div.modal {
     font-style: italic;
 }
 
+.traits {
+    font: 30px Arial;
+    fill: AliceBlue;
+    dominant-baseline: middle;
+}
+
+.line {
+    stroke-linecap: round;
+    stroke-width: 6;
+}
+
 .balance {
-    stroke: red;
+    stroke: CornflowerBlue;
 }
 
 .depends {
-    stroke: green;
+    stroke: Maroon;
 }
 
 .supports {
-    stroke: blue;
+    stroke: RebeccaPurple;
 }
 
 .labelb {
-    font-family: Sans-serif;
+    font-family: Arial;
     font-size: 10;
     dominant-baseline: middle;
-    fill: red;
+    fill: CornflowerBlue;
+}
+
+.labeld {
+    font-family: Arial;
+    font-size: 10;
+    dominant-baseline: middle;
+    fill: Maroon;
+}
+
+.labels {
+    font-family: Arial;
+    font-size: 10;
+    dominant-baseline: middle;
+    fill: RebeccaPurple;
+}
+
+#footer {
+    font-family: Times New Roman;
+    position:absolute;
+    bottom:25px;
+    width:100%;
+    left: 0;
+    text-align:center;
+    color: AliceBlue;
 }
 
 </style>
+
 <body bgcolor="#16161d">
-
 <script src="https://d3js.org/d3.v5.min.js"></script>
-
 <script>
 
+// dimensions
 var margin = {top: 25, right: 25, bottom: 25, left: 25},
     width = 640 - margin.left - margin.right,
     height = 730 - margin.top - margin.bottom;
 
+// grid coordinates
 var x1 = width/3, x2 = width*2/3,
-	  y1 = 150, y2 = 350, y3 = 550,
-	  d = 25;
+    y1 = 150, y2 = 350, y3 = 550,
+    d = 25;
 
+// base div
 var base = d3.select("body").append("div")
              .attr("id", "base");
 
+// tooltip div
 var div = base.append("div")
-    .attr("class", "tooltip")
-    .style("text-align", "center")
-    .style("opacity", 0);
+              .attr("class", "popup")
+              .style("text-align", "center")
+              .style("opacity", 0);
 
+// svg base
 var svg = base.append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-        .attr("transform",
-              "translate(" + margin.left + "," + margin.top + ")");
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+              .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
 
+// title
 svg.append("text")
-     .attr("id", "title")
-     .attr("transform", "translate(" + (width/2) + " , 30)")
-     .style("text-anchor", "middle")
-     .attr("font-family", "Sans-serif")
-     .attr("font-size", 40)
-     .attr("fill", "plum")
-     .text("Affirmations for My Ideal Self...");
+   .attr("id", "title")
+   .attr("transform", "translate(" + (width/2) + " , 40)")
+   .style("text-anchor", "middle")
+   .attr("font-family", "Times New Roman")
+   .attr("font-size", 40)
+   .attr("font-style", "italic")
+   .attr("fill", "AliceBlue")
+   .text("affirmations for my ideal self...");
 
+// create trait labels
 function trait_label(svg, x, y, endanchor, label, caption) {
   svg.append("text")
-       .attr("class", "traits")
-       .attr("id", label.split(" ")[0])
-       .attr("transform", "translate(" + x + " , " + y + ")")
-       .style("text-anchor", endanchor)
-       .text(label)
-       .on("mouseover", function() {
-           div.transition()
-              .duration(200)
-              .style("opacity", .9);
-           div.html(caption)
-              .style("left", (d3.event.pageX) + "px")	
-              .style("top", (d3.event.pageY) + "px");
-           })
-       .on("click", function() {
-           div2 = base.append("div")
-               .attr("class", "modal");
-           div2.transition()
-               .duration(200);
-           div2.style("opacity", .9)
-               .html(caption);
+     .attr("class", "traits")
+     .attr("id", label.split(" ")[0])
+     .attr("transform", "translate(" + x + " , " + y + ")")
+     .style("text-anchor", endanchor)
+     .text(label)
+     .on("mouseover", function() {
+         div.transition()
+            .duration(200)
+            .style("opacity", .95);
+         div.html(caption)
+            .style("left", (d3.event.pageX) + "px")  
+            .style("top", (d3.event.pageY) + "px");
+         })
+     .on("click", function() {
+         div2 = base.append("div")
+                    .attr("class", "popup");
+         div2.transition()
+             .duration(200);
+         div2.style("opacity", .95)
+             .html(caption);
 
-           div3 = base.append("div")
-               .attr("id", "clear");
-           div3.on("click", function() {
-                   div2.transition()
-                       .duration(200)
-                       .remove();
-                   div3.remove();
-               });
-           });
+         div3 = base.append("div")
+                    .attr("id", "clear");
+         div3.on("click", function() {
+                 div2.transition()
+                     .duration(200)
+                     .remove();
+                 div3.remove();
+             });
+         });
 }
 
 trait_label(svg, x1-d, y1, "end", "Memory",
-	"I will review and engage with what<br>I experience, hear, and read to honor others' gifts");
+  "I will review and engage with what<br>I experience, hear, and read<br>to honor others' gifts");
 trait_label(svg, x2+d, y1, "start", "Presence",
-	"I will be present and aware of myself<br>and my company, including the unspoken");
+  "I will be present and aware<br>of myself and my company,<br>including the unspoken");
 trait_label(svg, x1-d, y2, "end", "Reason",
-	"I will use reason to prepare myself<br>to make good decisions quickly");
+  "I will use reason to prepare myself<br>to make good decisions quickly");
 trait_label(svg, x2+d, y2, "start", "Action",
-	"I will not let discomfort, fear,<br>or laziness delay action;<br>I will develop habits to live my ideas");
+  "I will not let discomfort, fear,<br>or laziness delay action;<br>I will develop habits to live my ideas");
 trait_label(svg, x1-d, y3, "end", "Humility",
-	"I will never forget that I own, know, am nothing,<br>but am rather a part of larger wholes");
+  "I will be ever aware that<br>I own, know, am nothing,<br>but am rather a part<br>of larger wholes");
 trait_label(svg, x2+d, y3, "start", "Confidence",
-	"I will be passionate and committed<br>to my plans and decisions");
+  "I will be passionate and committed<br>to my plans and decisions");
 trait_label(svg, width/2, 675, "middle", "Body and Mind",
-	"I will foster focus, flexibility, balance, and stamina<br>in my body and mind as a prerequisite<br>to realizing my potential");
+  "Supporting all the above,<br>I will foster focus, flexibility,<br>balance, and stamina<br>in my body and mind<br>as a prerequisite<br>to realizing my potential");
 
 svg.selectAll(".traits")
-     .attr("font-family", "Sans-serif")
-     .attr("font-size", 30)
-     .attr("fill", "SkyBlue")
-     .attr("dominant-baseline", "middle")
-     .on("mouseout", function() {
-         div.transition()
-            .duration(500)
-            .style("opacity", 0);
-     });
-
-function connector(svg, x1, x2, y1, y2, cls, id, caption) {
-  svg.append("line")
-       .attr("class", cls)
-       .attr("id", id)
-       .attr("x1", x1)
-       .attr("y1", y1)
-       .attr("x2", x2)
-       .attr("y2", y2)
-       .on("mouseover", function() {
-           div.transition()
-              .duration(200)
-              .style("opacity", .9);
-           div.html(caption)
-              .style("left", (d3.event.pageX) + "px")	
-              .style("top", (d3.event.pageY) + "px");
-           })
-       .on("click", function() {
-           div2 = base.append("div")
-               .attr("class", "modal");
-           div2.transition()
-               .duration(200);
-           div2.style("opacity", .9)
-               .html(caption);
-
-           div3 = base.append("div")
-               .attr("id", "clear");
-           div3.on("click", function() {
-                   div2.transition()
-                      .duration(500)
-                      .remove();
-                   div3.remove();
-               });
-           });
-}
-
-connector(svg, x1, x2, y1, y1, "balance", "balance1",
-    "whatever");
-connector(svg, x1, x2, y2, y2, "balance", "balance2",
-    "whatever");
-connector(svg, x1, x2, y3, y3, "balance", "balance3",
-    "whatever");
-
-connector(svg, x1-1.5*d, x1-1.5*d, y1+d, y2-d, "depends", "depends1",
-    "whatever");
-connector(svg, x2+1.5*d, x2+1.5*d, y1+d, y2-d, "depends", "depends2",
-    "whatever");
-connector(svg, x1-1.5*d, x1-1.5*d, y2+d, y3-d, "depends", "depends3",
-    "whatever");
-connector(svg, x2+1.5*d, x2+1.5*d, y2+d, y3-d, "depends", "depends4",
-    "whatever");
-
-connector(svg, x1, x2, y1+d, y2-d, "supports", "supports1",
-    "whatever");
-connector(svg, x1, x2, y2-d, y1+d, "supports", "supports2",
-    "whatever");
-connector(svg, x1, x2, y2+d, y3-d, "supports", "supports3",
-    "whatever");
-connector(svg, x1, x2, y3-d, y2+d, "supports", "supports4",
-    "whatever");
-
-svg.selectAll("line")
-   .attr("stroke-width", 6)
    .on("mouseout", function() {
        div.transition()
           .duration(500)
           .style("opacity", 0);
    });
 
-function labelb(x, y, ta, text) {
+// create lines
+function connector(svg, x1, x2, y1, y2, cls) {
+  return svg.append("line")
+            .attr("class", cls + " line")
+            .attr("x1", x1)
+            .attr("y1", y1)
+            .attr("x2", x2)
+            .attr("y2", y2);
+}
+
+// add mouseover interactions
+function mouseover(line, caption, labeler, data) {
+    line.on("mouseover", function() {
+            div.transition()
+               .duration(200)
+               .style("opacity", .95);
+            div.html(caption)
+               .style("left", (d3.event.pageX) + "px")  
+               .style("top", (d3.event.pageY) + "px");
+    
+            data.forEach(labeler);
+            })
+        .on("mouseout", function() {
+            div.transition()
+               .duration(500)
+               .style("opacity", 0);
+            svg.selectAll(".linelabel")
+               .transition()
+               .duration(500)
+               .remove();
+        });
+    
+};
+
+// add click interactions
+function onclick(line, caption, labeler, data) {
+    line.on("click", function() {
+            div2 = base.append("div")
+                       .attr("class", "popup");
+            div2.transition()
+                .duration(200);
+            div2.style("opacity", .95)
+                .html(caption);
+
+            div3 = base.append("div")
+                       .attr("id", "clear");
+            div3.on("click", function() {
+                    div2.transition()
+                        .duration(500)
+                        .remove();
+                    div3.remove();
+
+                    svg.selectAll(".linelabel")
+                       .transition()
+                       .duration(500)
+                       .remove();
+                });
+
+            data.forEach(labeler);
+            });
+}
+
+// add the two interactions
+function add_interacts(line, caption, labeler, data) {
+    mouseover(line, caption, labeler, data);
+    onclick(line, caption, labeler, data);
+}
+
+// add balances annotations
+function labelb(data) {
+    var x = data[0], y = data[1], ta = data[2], text = data[3]
     svg.append("text")
-       .attr("class", "labelb")
+       .attr("class", "labelb linelabel")
        .attr("transform", "translate(" + Math.floor(x) + " , " + Math.floor(y) + ")")
        .style("text-anchor", ta)
        .text(text)
     svg.transition()
        .duration(200)
-       .style("opacity", .9);
+       .style("opacity", .95);
 };
-line = svg.select("#balance1")
-line.on("mouseover", function() {
-        div.transition()
-           .duration(200)
-           .style("opacity", .9);
-        div.html("whatever")
-           .style("left", (d3.event.pageX) + "px")	
-           .style("top", (d3.event.pageY) + "px");
 
-        labelb(x1-d, y1+d/2, "start", "breadth")
-        labelb(x2+d, y1+d/2, "end", "depth")
-        labelb((x1+x2)/2, y1-d/2, "middle", "balances")
-        });
-line = svg.select("#balance2")
-line.on("mouseover", function() {
-        div.transition()
-           .duration(200)
-           .style("opacity", .9);
-        div.html("whatever")
-           .style("left", (d3.event.pageX) + "px")	
-           .style("top", (d3.event.pageY) + "px");
+// create balances lines
+caption = ["Reflect so as to remember more,",
+           "but not for so long you stop paying attention.",
+           "Be present so as to notice more for enrichment,",
+           "but not so much you can't remember any of it."].join("<br>");
+line = connector(svg, x1, x2, y1, y1, "balance");
+add_interacts(line, caption, labelb,
+              [[x1-d, y1+d/2, "start", "breadth"],
+               [x2+d, y1+d/2, "end", "depth"],
+               [(x1+x2)/2, y1-d/2, "middle", "balances"]]);
 
-        labelb(x1-d, y2+d/2, "start", "ideas")
-        labelb(x2+d, y2+d/2, "end", "habits")
-        labelb((x1+x2)/2, y2-d/2, "middle", "balances")
-        });
-line = svg.select("#balance3")
-line.on("mouseover", function() {
-        div.transition()
-           .duration(200)
-           .style("opacity", .9);
-        div.html("whatever")
-           .style("left", (d3.event.pageX) + "px")	
-           .style("top", (d3.event.pageY) + "px");
+caption = ["Don't get lost in planning and analysis.",
+           "Action is required to inform Reason.",
+           "Don't act impetuously.",
+           "Reason is required to condition Action."].join("<br>");
+line = connector(svg, x1, x2, y2, y2, "balance");
+add_interacts(line, caption, labelb,
+              [[x1-d, y2+d/2, "start", "ideas"],
+               [x2+d, y2+d/2, "end", "habits"],
+               [(x1+x2)/2, y2-d/2, "middle", "balances"]]);
 
-        labelb(x1-d, y3+d/2, "start", "others")
-        labelb(x2+d, y3+d/2, "end", "self")
-        labelb((x1+x2)/2, y3-d/2, "middle", "balances")
-        });
-svg.selectAll(".balance")
-	 .on("mouseout", function() {
-        div.transition()
-           .duration(500)
-           .style("opacity", 0);
-        svg.selectAll(".labelb")
-           .transition()
-           .duration(500)
-           .remove();
-        });
+caption = ["Too much Humility, and you cannot decide.",
+           "You cannot grow. You cannot support others.",
+           "Too much Confidence, and you cannot see.",
+           "You cannot adapt. You cannot avoid causing harm."].join("<br>");
+line = connector(svg, x1, x2, y3, y3, "balance");
+add_interacts(line, caption, labelb,
+              [[x1-d, y3+d/2, "start", "others"],
+               [x2+d, y3+d/2, "end", "self"],
+               [(x1+x2)/2, y3-d/2, "middle", "balances"]]);
+
+// add depends annotations
+function labeld(data) {
+    var x = data[0], y = data[1], angle = data[2]
+    svg.append("text")
+       .attr("class", "labeld linelabel")
+       .attr("transform", "translate(" + Math.floor(x) + " , " + Math.floor(y) + ")rotate(" + angle + ")")
+       .style("text-anchor", "middle")
+       .text("depends on")
+    svg.transition()
+       .duration(200)
+       .style("opacity", .95);
+};
+
+// create depends lines
+caption = ["Without Reason, Memory has no home.",
+           "Without Memory, Reason has no material."].join("<br>");
+line = connector(svg, x1-1.5*d, x1-1.5*d, y1+d, y2-d, "depends");
+add_interacts(line, caption, labeld, [[x1-2*d, (y1+y2)/2, 270]]);
+
+caption = ["Presence requires both habituation",
+           "and conscious effort to sustain.",
+           "Action, whether deliberate or reflexive,",
+           "requires observation to inform or trigger."].join("<br>");
+line = connector(svg, x2+1.5*d, x2+1.5*d, y1+d, y2-d, "depends");
+add_interacts(line, caption, labeld, [[x2+2*d, (y1+y2)/2, 90]]);
+
+caption = ["To Reason well, you cannot rely on your own perspective.",
+           "You must account for your mind's bias to favor itself.",
+           "To remain Humble, you cannot rely on your instincts.",
+           "You must test your sense of self against evidence."].join("<br>");
+line = connector(svg, x1-1.5*d, x1-1.5*d, y2+d, y3-d, "depends");
+add_interacts(line, caption, labeld, [[x1-2*d, (y2+y3)/2, 270]]);
+
+caption = ["Insufficient Confidence is disruptive to Action.",
+           "Successful Action conditions Confidence."].join("<br>");
+line = connector(svg, x2+1.5*d, x2+1.5*d, y2+d, y3-d, "depends");
+add_interacts(line, caption, labeld, [[x2+2*d, (y2+y3)/2, 90]]);
+
+// add supports annotations
+function labels(data) {
+    var x = data[0], y = data[1], angle = data[2], anchor = data[3]
+    svg.append("text")
+       .attr("class", "labels linelabel")
+       .attr("transform", "translate(" + Math.floor(x) + " , " + Math.floor(y) + ")rotate(" + angle + ")")
+       .style("text-anchor", anchor)
+       .text("supports")
+    svg.transition()
+       .duration(200)
+       .style("opacity", .95);
+};
+
+// add supports lines
+caption = ["Past experience can inform Action,",
+           "even if you haven't had a chance to process it.",
+           "Action can lead to more varied experiences,",
+           "nourishing Memory."].join("<br>");
+line = connector(svg, x1, x2, y1+d, y2-d, "supports");
+add_interacts(line, caption, labels, [[x1+d, y1+d, 39, "start"]]);
+
+caption = ["Reason can prepare you with expectations",
+           "so that you can be more Present and aware.",
+           "Presence can disclose others' logic and assumptions,",
+           "expanding your capacity for Reason."].join("<br>");
+line = connector(svg, x1, x2, y2-d, y1+d, "supports");
+add_interacts(line, caption, labels, [[x2-d, y1+d, 321, "end"]]);
+
+caption = ["Sometimes Confidence demands",
+           "strong Reasoning for support.",
+           "Sometimes Reason (especially when defeasible)",
+           "demands Confidence to proceed."].join("<br>");
+line = connector(svg, x1, x2, y2+d, y3-d, "supports");
+add_interacts(line, caption, labels, [[x1+d, y2+d, 39, "start"]]);
+
+caption = ["Sometimes Action is easier",
+           "when it's for others.",
+           "Sometimes Humility demands",
+           "uncomfortable, conscious effort."].join("<br>");
+line = connector(svg, x1, x2, y3-d, y2+d, "supports");
+add_interacts(line, caption, labels, [[x2-d, y2+d, 321, "end"]]);
 
 </script>
+
+<span id="footer">
+  <i>*see blog post for writeup</i>
+</span>
+
 </body>
