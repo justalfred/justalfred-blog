@@ -184,7 +184,12 @@ function trait_label(svg, x, y, endanchor, label, caption) {
                      .duration(200)
                      .remove();
                  div3.remove();
+                 svg.selectAll(".traits")
+	                  .style("pointer-events", "");
              });
+
+         svg.selectAll(".traits")
+	          .style("pointer-events", "none");
          });
 }
 
@@ -276,7 +281,13 @@ function onclick(line, caption, labeler, data) {
                        .transition()
                        .duration(500)
                        .remove();
+
+                    svg.selectAll(".traits")
+	                     .style("pointer-events", "");
                 });
+
+            svg.selectAll(".traits")
+	             .style("pointer-events", "none");
 
             data.forEach(labeler);
             });
