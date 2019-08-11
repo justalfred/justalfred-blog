@@ -41,6 +41,12 @@
 }
 
 .line {
+    stroke: white;
+    stroke-linecap: round;
+    stroke-width: 20;
+}
+
+.colorline {
     stroke-linecap: round;
     stroke-width: 6;
 }
@@ -57,24 +63,21 @@
     stroke: RebeccaPurple;
 }
 
-.labelb {
+.linelabel {
     font-family: Arial;
     font-size: 10;
     dominant-baseline: middle;
+}
+
+.labelb {
     fill: CornflowerBlue;
 }
 
 .labeld {
-    font-family: Arial;
-    font-size: 10;
-    dominant-baseline: middle;
     fill: Maroon;
 }
 
 .labels {
-    font-family: Arial;
-    font-size: 10;
-    dominant-baseline: middle;
     fill: RebeccaPurple;
 }
 
@@ -88,6 +91,21 @@
     color: AliceBlue;
 }
 
+a:link {
+    color: RebeccaPurple;
+}
+
+a:visited {
+    color: RebeccaPurple;
+}
+
+a:hover {
+    color: AliceBlue;
+}
+
+a:active {
+    color: AliceBlue;
+}
 </style>
 
 <body bgcolor="#16161d">
@@ -150,6 +168,8 @@ function trait_label(svg, x, y, endanchor, label, caption) {
             .style("top", (d3.event.pageY) + "px");
          })
      .on("click", function() {
+         div.style("opacity", 0);
+
          div2 = base.append("div")
                     .attr("class", "popup");
          div2.transition()
@@ -192,12 +212,20 @@ svg.selectAll(".traits")
 
 // create lines
 function connector(svg, x1, x2, y1, y2, cls) {
+  svg.append("line")
+     .attr("class", cls + " colorline")
+     .attr("x1", x1)
+     .attr("y1", y1)
+     .attr("x2", x2)
+     .attr("y2", y2);
+
   return svg.append("line")
-            .attr("class", cls + " line")
+            .attr("class", "line")
             .attr("x1", x1)
             .attr("y1", y1)
             .attr("x2", x2)
-            .attr("y2", y2);
+            .attr("y2", y2)
+            .attr("opacity", 0);
 }
 
 // add mouseover interactions
@@ -227,6 +255,8 @@ function mouseover(line, caption, labeler, data) {
 // add click interactions
 function onclick(line, caption, labeler, data) {
     line.on("click", function() {
+            div.style("opacity", 0);
+
             div2 = base.append("div")
                        .attr("class", "popup");
             div2.transition()
@@ -261,7 +291,7 @@ function add_interacts(line, caption, labeler, data) {
 // add balances annotations
 function labelb(data) {
     var x = data[0], y = data[1], ta = data[2], text = data[3]
-    svg.append("text")
+    svg.insert("text", ":first-child")
        .attr("class", "labelb linelabel")
        .attr("transform", "translate(" + Math.floor(x) + " , " + Math.floor(y) + ")")
        .style("text-anchor", ta)
@@ -305,7 +335,7 @@ add_interacts(line, caption, labelb,
 // add depends annotations
 function labeld(data) {
     var x = data[0], y = data[1], angle = data[2]
-    svg.append("text")
+    svg.insert("text", ":first-child")
        .attr("class", "labeld linelabel")
        .attr("transform", "translate(" + Math.floor(x) + " , " + Math.floor(y) + ")rotate(" + angle + ")")
        .style("text-anchor", "middle")
@@ -343,7 +373,7 @@ add_interacts(line, caption, labeld, [[x2+2*d, (y2+y3)/2, 90]]);
 // add supports annotations
 function labels(data) {
     var x = data[0], y = data[1], angle = data[2], anchor = data[3]
-    svg.append("text")
+    svg.insert("text", ":first-child")
        .attr("class", "labels linelabel")
        .attr("transform", "translate(" + Math.floor(x) + " , " + Math.floor(y) + ")rotate(" + angle + ")")
        .style("text-anchor", anchor)
@@ -385,7 +415,7 @@ add_interacts(line, caption, labels, [[x2-d, y2+d, 321, "end"]]);
 </script>
 
 <span id="footer">
-  <i>*see blog post for writeup</i>
+	<i>*see <a href="https://blog.justalfred.com/affirmations.html">blog post</a> for a writeup and background</i>
 </span>
 
 </body>
