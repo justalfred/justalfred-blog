@@ -31,7 +31,7 @@ I was down to three pairs plus one trait that sat on its own.
 Finally, I noticed that there were still strong relationships between many of the traits,
 and that these had a pattern.
 
-**[The result]({filename}/html/affirmations.html)** was quite useful for a few months,
+**The result ([click here to see it]({filename}/html/affirmations.html))** was quite useful for a few months,
 but I’ve since largely neglected them.
 So I decided to digitize them to bring them again into the fore of my attention.
 I expect that as I engage with these principles more,
