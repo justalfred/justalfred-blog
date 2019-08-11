@@ -184,12 +184,7 @@ function trait_label(svg, x, y, endanchor, label, caption) {
                      .duration(200)
                      .remove();
                  div3.remove();
-                 svg.selectAll(".traits")
-	                  .style("pointer-events", "");
              });
-
-         svg.selectAll(".traits")
-	          .style("pointer-events", "none");
          });
 }
 
@@ -211,7 +206,7 @@ trait_label(svg, width/2, 675, "middle", "Body and Mind",
 svg.selectAll(".traits")
    .on("mouseout", function() {
        div.transition()
-          .duration(500)
+          .duration(200)
           .style("opacity", 0);
    });
 
@@ -247,11 +242,11 @@ function mouseover(line, caption, labeler, data) {
             })
         .on("mouseout", function() {
             div.transition()
-               .duration(500)
+               .duration(200)
                .style("opacity", 0);
             svg.selectAll(".linelabel")
                .transition()
-               .duration(500)
+               .duration(200)
                .remove();
         });
     
@@ -273,21 +268,15 @@ function onclick(line, caption, labeler, data) {
                        .attr("id", "clear");
             div3.on("click", function() {
                     div2.transition()
-                        .duration(500)
+                        .duration(200)
                         .remove();
                     div3.remove();
 
                     svg.selectAll(".linelabel")
                        .transition()
-                       .duration(500)
+                       .duration(200)
                        .remove();
-
-                    svg.selectAll(".traits")
-	                     .style("pointer-events", "");
                 });
-
-            svg.selectAll(".traits")
-	             .style("pointer-events", "none");
 
             data.forEach(labeler);
             });
