@@ -2,12 +2,18 @@
 <meta charset="utf-8">
 <style>
 
+#top {
+    position: relative;
+    min-height: 850px;
+}
+
 #base {
     display: flex;
     position: relative;
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-bottom: 25px;
 }
 
 .popup {
@@ -84,9 +90,9 @@
 #footer {
     font-family: Times New Roman;
     position:absolute;
-    bottom:25px;
+    bottom:0px;
+    height:25px;
     width:100%;
-    left: 0;
     text-align:center;
     color: AliceBlue;
 }
@@ -122,9 +128,16 @@ var x1 = width/3, x2 = width*2/3,
     y1 = 150, y2 = 350, y3 = 550,
     d = 25;
 
-// base div
-var base = d3.select("body").append("div")
-             .attr("id", "base");
+// base divs
+var top_div = d3.select("body").append("div")
+                .attr("id", "top");
+var base = top_div.append("div")
+                  .attr("id", "base");
+
+// add footer
+top_div.append("footer")
+       .attr("id", "footer")
+       .html("<i>*see <a href=\"https://blog.justalfred.com/affirmations.html\">blog post</a> for a writeup and background</i>")
 
 // tooltip div
 var div = base.append("div")
@@ -413,9 +426,5 @@ line = connector(svg, x1, x2, y3-d, y2+d, "supports");
 add_interacts(line, caption, labels, [[x2-d, y2+d, 321, "end"]]);
 
 </script>
-
-<span id="footer">
-	<i>*see <a href="https://blog.justalfred.com/affirmations.html">blog post</a> for a writeup and background</i>
-</span>
 
 </body>
