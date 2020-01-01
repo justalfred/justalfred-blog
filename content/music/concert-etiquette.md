@@ -66,7 +66,7 @@ of a good friend with a doctorate in CS (AI) so I hope that we will have
 something fun for you soon!  
 
 <figure>
-  <a href="{filename}../images/tritone.png">
-    <img src="{filename}../images/tritone.png" alt="Plot titled, 'Tritone Probability by Decade'">
+  <a href="{static}../images/tritone.png">
+    <img src="{static}../images/tritone.png" alt="Plot titled, 'Tritone Probability by Decade'">
   </a>
 </figure>

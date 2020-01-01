@@ -16,5 +16,5 @@ it's not prettier. I know what pretty looks like; I don't know how to make
 pretty things.
 
 Well, for what it's worth, I present to you
-[the slides]({filename}/html/PyGotham2016.html)
+[the slides]({static}/html/PyGotham2016.html)
 to "Spark Dataframes for the Pandas Pro". 

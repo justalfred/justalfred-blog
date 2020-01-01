@@ -39,8 +39,8 @@ None will ever know us. Most will never notice. We’re only small parts of a wh
 The response is humility and the release of much burden.
 
 <figure>
-  <a href="{filename}../images/falls.jpg">
-    <img src="{filename}../images/falls.jpg" alt="Image of a series of rocky waterfalls with trees on either side." width="504">
+  <a href="{static}../images/falls.jpg">
+    <img src="{static}../images/falls.jpg" alt="Image of a series of rocky waterfalls with trees on either side." width="504">
   </a>
   <figcaption>Imagine this in an aeon....</figcaption>
 </figure>
@@ -61,8 +61,8 @@ Proximate, purposeful emptiness is more imposing on a person than a parallel, po
 There’s a resonance here with Buddhism’s second noble truth.
 
 <figure>
-  <a href="{filename}../images/michael_heizer.jpg">
-    <img src="{filename}../images/michael_heizer.jpg" alt="Expansive gallery space with gaping holes in the ground with various geometric profiles." width="504">
+  <a href="{static}../images/michael_heizer.jpg">
+    <img src="{static}../images/michael_heizer.jpg" alt="Expansive gallery space with gaping holes in the ground with various geometric profiles." width="504">
   </a>
   <figcaption><a href="https://www.diaart.org/collection/collection/heizer-michael-north-east-south-west-19672002-2003-174-1-4"><i>North, East, South, West</i></a>, Michael Heizer</figcaption>
 </figure>

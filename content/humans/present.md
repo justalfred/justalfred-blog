@@ -5,8 +5,8 @@ Author: Just Alfred
 Summary: Present
 
 I entered the next room in the contemporary art room at the Corning Museum of Glass and was drawn immediately to the pure forms.
-A figure represented in printed, offset [glass plates]({filename}../images/plates.jpg);
-a large, slightly bulging [cube of black glass]({filename}../images/black_cube.jpg).
+A figure represented in printed, offset [glass plates]({static}../images/plates.jpg);
+a large, slightly bulging [cube of black glass]({static}../images/black_cube.jpg).
 Then I found Nicole Chesney's [Present](http://www.cmog.org/collection/rakow-commission/nicole-chesney).
 A nacreous, abstract atmosphere painted and wiped across a glass canvas.
 And I started to think.
@@ -25,7 +25,7 @@ And with these thoughts in mind, I made my own art.
 Self Portrait: Relinquishing My Self
 
 <figure>
-  <a href="{filename}../images/self-portrait1.jpg">
-    <img src="{filename}../images/self-portrait1.jpg" alt="Silver-toned, textured surface with a dark figure reflected in the center">
+  <a href="{static}../images/self-portrait1.jpg">
+    <img src="{static}../images/self-portrait1.jpg" alt="Silver-toned, textured surface with a dark figure reflected in the center">
   </a>
 <figure>

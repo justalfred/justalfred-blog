@@ -24,8 +24,8 @@ production's problems.
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------
 <figure>
-  <a href="{filename}../images/IMG_20130426_181022.jpg">
-    <img src="{filename}../images/IMG_20130426_181022.jpg" alt="Facade of the Met Opera House with banners for each of the operas and a full crowd of people.">
+  <a href="{static}../images/IMG_20130426_181022.jpg">
+    <img src="{static}../images/IMG_20130426_181022.jpg" alt="Facade of the Met Opera House with banners for each of the operas and a full crowd of people.">
   </a>
 </figure>
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------

@@ -23,8 +23,8 @@ Finally, I decided there was only one way to find out.
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------
 <figure>
-  <a href="{filename}../images/cheese_experiment.jpg">
-    <img src="{filename}../images/cheese_experiment.jpg" alt="Four Babybel cheeses marked with different ages, ranging from 0 to 18 months, looking progressively wetter and darker.">
+  <a href="{static}../images/cheese_experiment.jpg">
+    <img src="{static}../images/cheese_experiment.jpg" alt="Four Babybel cheeses marked with different ages, ranging from 0 to 18 months, looking progressively wetter and darker.">
   </a>
 </figure>
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------
