@@ -323,7 +323,7 @@ If you want to generate RSS feeds (some of us still use RSS) you can do that qui
 ```python
 FEED_DOMAIN = SITEURL
 FEED_ALL_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
 ```
 
 If you want to use [Disqus](https://disqus.com/) to enable comments, you can
