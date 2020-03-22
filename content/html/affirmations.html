@@ -205,14 +205,14 @@ trait_label(svg, x1-d, y1, "end", "Memory",
   "I will review and engage with what<br>I experience, hear, and read<br>to honor others' gifts");
 trait_label(svg, x2+d, y1, "start", "Presence",
   "I will be present and aware<br>of myself and my company,<br>including the unspoken");
-trait_label(svg, x1-d, y2, "end", "Reason",
-  "I will use reason to prepare myself<br>to make good decisions quickly");
-trait_label(svg, x2+d, y2, "start", "Action",
-  "I will not let discomfort, fear,<br>or laziness delay action;<br>I will develop habits to live my ideas");
+trait_label(svg, x1-d, y2, "end", "Reflection",
+	"I will reflect on my actions<br>to hold myself accountable<br>and to prepare myself to make<br>good decisions quickly");
+trait_label(svg, x2+d, y2, "start", "Practice",
+	"I will develop habits of<br>practice to live my ideas");
 trait_label(svg, x1-d, y3, "end", "Humility",
   "I will be ever aware that<br>I own, know, am nothing,<br>but am rather a part<br>of larger wholes");
-trait_label(svg, x2+d, y3, "start", "Confidence",
-  "I will be passionate and committed<br>to my plans and decisions");
+trait_label(svg, x2+d, y3, "start", "Self-Trust",
+  "I will trust myself to be<br>capable of living up to my ideals");
 trait_label(svg, width/2, 675, "middle", "Body and Mind",
 	"The above is not sustainable<br>without a healthy body<br>and unencumbered mind");
 
@@ -315,30 +315,25 @@ function labelb(data) {
 };
 
 // create balances lines
-caption = ["Reflect so as to remember more,",
-           "but not for so long you stop paying attention.",
-           "Be present so as to notice more for enrichment,",
-           "but not so much you can't remember any of it."].join("<br>");
+caption = ["Committing Memories removes you from Presence,",
+           "but total Presence yields too much to remember."].join("<br>");
 line = connector(svg, x1, x2, y1, y1, "balance");
 add_interacts(line, caption, labelb,
               [[x1-d, y1+d/2, "start", "breadth"],
                [x2+d, y1+d/2, "end", "depth"],
                [(x1+x2)/2, y1-d/2, "middle", "balances"]]);
 
-caption = ["Don't get lost in planning and analysis.",
-           "Action is required to inform Reason.",
-           "Don't act impetuously.",
-           "Reason is required to condition Action."].join("<br>");
+caption = ["Enough Reflection to design good Practices",
+           "but not so much you never start the Practice."].join("<br>");
 line = connector(svg, x1, x2, y2, y2, "balance");
 add_interacts(line, caption, labelb,
               [[x1-d, y2+d/2, "start", "ideas"],
                [x2+d, y2+d/2, "end", "habits"],
                [(x1+x2)/2, y2-d/2, "middle", "balances"]]);
 
-caption = ["Too much Humility, and you cannot decide.",
-           "You cannot grow. You cannot support others.",
-           "Too much Confidence, and you cannot see.",
-           "You cannot adapt. You cannot avoid causing harm."].join("<br>");
+caption = ["Without Humility, you cannot see your true potential",
+           "or the harm you cause. Without Self-Trust, you cannot",
+           "realize your potential or properly support others."].join("<br>");
 line = connector(svg, x1, x2, y3, y3, "balance");
 add_interacts(line, caption, labelb,
               [[x1-d, y3+d/2, "start", "others"],
@@ -359,27 +354,27 @@ function labeld(data) {
 };
 
 // create depends lines
-caption = ["Without Reason, Memory has no home.",
-           "Without Memory, Reason has no material."].join("<br>");
+caption = ["Without Reflection, Memory has no home.",
+           "Without Memory, Reflection has no material."].join("<br>");
 line = connector(svg, x1-1.5*d, x1-1.5*d, y1+d, y2-d, "depends");
 add_interacts(line, caption, labeld, [[x1-2*d, (y1+y2)/2, 270]]);
 
 caption = ["Presence requires both habituation",
            "and conscious effort to sustain.",
-           "Action, whether deliberate or reflexive,",
-           "requires observation to inform or trigger."].join("<br>");
+           "Practice requires active observation",
+           "to inform or trigger."].join("<br>");
 line = connector(svg, x2+1.5*d, x2+1.5*d, y1+d, y2-d, "depends");
 add_interacts(line, caption, labeld, [[x2+2*d, (y1+y2)/2, 90]]);
 
-caption = ["To Reason well, you cannot rely on your own perspective.",
+caption = ["To Reflect well, you cannot rely on your own perspective.",
            "You must account for your mind's bias to favor itself.",
            "To remain Humble, you cannot rely on your instincts.",
            "You must test your sense of self against evidence."].join("<br>");
 line = connector(svg, x1-1.5*d, x1-1.5*d, y2+d, y3-d, "depends");
 add_interacts(line, caption, labeld, [[x1-2*d, (y2+y3)/2, 270]]);
 
-caption = ["Insufficient Confidence is disruptive to Action.",
-           "Successful Action conditions Confidence."].join("<br>");
+caption = ["Committed Practice requires Self-Trust.",
+           "Self-Trust develops through Practice."].join("<br>");
 line = connector(svg, x2+1.5*d, x2+1.5*d, y2+d, y3-d, "depends");
 add_interacts(line, caption, labeld, [[x2+2*d, (y2+y3)/2, 90]]);
 
@@ -397,31 +392,30 @@ function labels(data) {
 };
 
 // add supports lines
-caption = ["Past experience can inform Action,",
+caption = ["Past experience should guide Practice,",
            "even if you haven't had a chance to process it.",
-           "Action can lead to more varied experiences,",
+           "More Practice can lead to more varied experiences,",
            "nourishing Memory."].join("<br>");
 line = connector(svg, x1, x2, y1+d, y2-d, "supports");
 add_interacts(line, caption, labels, [[x1+d, y1+d, 39, "start"]]);
 
-caption = ["Reason can prepare you with expectations",
+caption = ["Reflection can prepare you with expectations",
            "so that you can be more Present and aware.",
            "Presence can disclose others' logic and assumptions,",
-           "expanding your capacity for Reason."].join("<br>");
+           "providing more substance for Reflection."].join("<br>");
 line = connector(svg, x1, x2, y2-d, y1+d, "supports");
 add_interacts(line, caption, labels, [[x2-d, y1+d, 321, "end"]]);
 
-caption = ["Sometimes Confidence demands",
-           "strong Reasoning for support.",
-           "Sometimes Reason (especially when defeasible)",
-           "demands Confidence to proceed."].join("<br>");
+caption = ["Sometimes Self-Trust demands",
+           "strong Reflection for support.",
+           "Sometimes Reflection is difficult",
+           "without Self-Trust."].join("<br>");
 line = connector(svg, x1, x2, y2+d, y3-d, "supports");
 add_interacts(line, caption, labels, [[x1+d, y2+d, 39, "start"]]);
 
-caption = ["Sometimes Action is easier",
-           "when it's for others.",
-           "Sometimes Humility demands",
-           "uncomfortable, conscious effort."].join("<br>");
+caption = ["Practice is easier when it's for the sake",
+           "of others. But it takes continual Practice",
+           "to grasp your connection to others."].join("<br>");
 line = connector(svg, x1, x2, y3-d, y2+d, "supports");
 add_interacts(line, caption, labels, [[x2-d, y2+d, 321, "end"]]);
 
