@@ -514,7 +514,7 @@ That doesn’t make sense.
 What were we talking about before?
 </samp>
 
-~ You know better than I do….
+~ You know better than I do....
 Right, I was trying to remember the name of the bartender from last week,
 and we got as far as trying to remember the name of the restaurant,
 and you inexplicably gave me Lunch Rush.
