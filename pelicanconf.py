@@ -36,8 +36,8 @@ SOCIAL = (('Twitter', 'https://twitter.com/Alphrabet'),
 TWITTER_CARDS = False
 
 LINKS = [
-    ('Archives', "archives.html"),
-    ('RSS feed', "feeds/all.rss.xml"),
+    ('Archives', "/archives.html"),
+    ('RSS feed', "/feeds/all.rss.xml"),
 ]
 
 DEFAULT_PAGINATION = 10
