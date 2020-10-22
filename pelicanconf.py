@@ -31,11 +31,10 @@ SOCIAL = (('Twitter', 'https://twitter.com/Alphrabet'),
           ('Github', 'https://github.com/justalfred'),
           )
 
-TWITTER_CARDS = True
+TWITTER_CARDS = False
 
 LINKS = [
     ('Archives', "archives.html"),
-    ('Categories', "categories.html"),
     ('Tags', "tags.html"),
     ('RSS feed', "feeds/all.rss.xml"),
 ]
@@ -48,6 +47,8 @@ DEFAULT_PAGINATION = 10
 THEME = '../pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
 CUSTOM_CSS = 'static/custom.css'
+SHOW_DATE_MODIFIED = True
+USE_OPEN_GRAPH = False
 
 STATIC_PATHS = ['images', 'extra/CNAME',
                 'extra/robots.txt', 'extra/custom.css',
