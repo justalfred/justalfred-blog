@@ -1,6 +1,6 @@
 Title: The Acceptance of Ambiguity
 Date: 2018-03-26
-Tags: humans, code
+Tags: exploring, living, tech, thinking
 Author: Just Alfred
 Summary: When the answer isn't clear, it might mean it doesn't need to be.
 

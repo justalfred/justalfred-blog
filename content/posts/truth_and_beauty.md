@@ -1,6 +1,6 @@
 Title: Truth and Beauty
 Date: 2017-07-09
-Tags: humans
+Tags: art, living, thinking
 Author: Just Alfred
 Summary: Truth and Beauty. Truth or Beauty. Truth in Beauty.
 

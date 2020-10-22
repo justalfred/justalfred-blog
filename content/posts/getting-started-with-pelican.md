@@ -1,6 +1,6 @@
 Title: Getting Started with Pelican on Github Pages
 Date: 2018-06-09
-Tags: Code
+Tags: explaining, tech
 Author: Just Alfred
 Summary: How I got this site started
 

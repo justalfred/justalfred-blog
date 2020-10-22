@@ -1,6 +1,6 @@
 Title: You are an Antichrist
 Date: 2016-04-16
-Tags: humans
+Tags: thinking
 Author: Just Alfred
 Summary: It's only logical.
 

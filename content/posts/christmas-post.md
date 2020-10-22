@@ -1,7 +1,7 @@
 Title: Christmas post
 Date: 2010-12-25 14:50
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: music
 
 *Originally published at: [http://kwontum.blogspot.com/2010/12/None.html](http://kwontum.blogspot.com/2010/12/None.html)*
 

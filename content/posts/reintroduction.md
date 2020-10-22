@@ -1,6 +1,6 @@
 Title: Re-Introduction
 Date: 2015-06-29
-Tags: info
+Tags: living
 Author: Just Alfred
 Summary: Welcome again to my old blog.
 

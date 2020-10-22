@@ -1,6 +1,6 @@
 Title: Empathy in its Place
 Date: 2017-10-14
-Tags: humans
+Tags: explaining, living, science
 Author: Just Alfred
 Summary: Empathy. Mostly good.
 

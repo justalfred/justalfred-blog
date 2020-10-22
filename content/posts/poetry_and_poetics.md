@@ -1,6 +1,6 @@
 Title: Poetry and Poetics
 Date: 2018-07-05
-Tags: literature
+Tags: BISR, art
 Author: Just Alfred
 Summary: I took another BISR class. The mental exercise was very healthy.
 

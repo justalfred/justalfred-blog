@@ -1,7 +1,7 @@
 Title: Form and Its Function
 Date: 2010-12-05 19:59
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: explaining, music
 Slug: form-and-its-function
 
 *Originally published at: [http://kwontum.blogspot.com/2010/12/form-and-its-function.html](http://kwontum.blogspot.com/2010/12/form-and-its-function.html)*

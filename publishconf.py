@@ -15,7 +15,7 @@ RELATIVE_URLS = False
 
 FEED_DOMAIN = SITEURL
 FEED_ALL_RSS = 'feeds/all.rss.xml'
-# TAG_FEED_RSS = 'feeds/{slug}.rss.xml'
+TAG_FEED_RSS = 'feeds/{slug}.rss.xml'
 
 DELETE_OUTPUT_DIRECTORY = False
 

@@ -1,7 +1,7 @@
 Title: Happy New Year
 Date: 2011-01-03 05:42
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: music
 
 *Originally published at: [http://kwontum.blogspot.com/2011/01/None.html](http://kwontum.blogspot.com/2011/01/None.html)*
 

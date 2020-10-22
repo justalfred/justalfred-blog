@@ -1,7 +1,7 @@
 Title: Austin-auto
 Date: 2010-12-13 03:51
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: explaining, music
 
 *Originally published at: [http://kwontum.blogspot.com/2010/12/None.html](http://kwontum.blogspot.com/2010/12/None.html)*
 

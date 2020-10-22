@@ -1,7 +1,7 @@
 Title: Quicklink 1
 Date: 2010-12-15 19:44
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: music
 
 *Originally published at: [http://kwontum.blogspot.com/2010/12/None.html](http://kwontum.blogspot.com/2010/12/None.html)*
 

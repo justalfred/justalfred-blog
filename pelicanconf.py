@@ -37,7 +37,6 @@ TWITTER_CARDS = False
 
 LINKS = [
     ('Archives', "archives.html"),
-    ('Tags', "tags.html"),
     ('RSS feed', "feeds/all.rss.xml"),
 ]
 
@@ -69,4 +68,6 @@ JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 READERS = {'html': None}
 
+TAGS_SAVE_AS = 'tags.html'
+TAGS_URL = TAGS_SAVE_AS
 TAG_CLOUD_SORTING = 'size-rev'

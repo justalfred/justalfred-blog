@@ -1,6 +1,6 @@
 Title: The Mind-Killer
 Date: 2018-05-14
-Tags: humans
+Tags: living
 Author: Just Alfred
 Summary: Let the fear pass, but study it as it passes.
 

@@ -1,7 +1,7 @@
 Title: Concert Etiquette
 Date: 2013-02-19 03:00
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: explaining, music
 
 *Originally published at: [http://kwontum.blogspot.com/2013/02/None.html](http://kwontum.blogspot.com/2013/02/None.html)*
 

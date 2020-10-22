@@ -1,6 +1,6 @@
 Title: Making the World Better Without Making a Thing
 Date: 2018-08-12
-Tags: humans
+Tags: exploring, living, thinking
 Author: Just Alfred
 Summary: We don't all need to be Makers. We do all need to recognize the rest.
 

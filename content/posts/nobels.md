@@ -1,7 +1,7 @@
 Title: Nobels
 Date: 2013-09-08 14:06
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Science, Humans
+Tags: science
 Slug: nobels
 
 *Originally published at: [http://kwontum.blogspot.com/2013/09/nobels.html](http://kwontum.blogspot.com/2013/09/nobels.html)*

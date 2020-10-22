@@ -1,6 +1,6 @@
 Title: Physics and Platonic Forms
 Date: 2018-06-17
-Tags: humans
+Tags: explaining, science, thinking
 Author: Just Alfred
 Summary: It seems like a charmingly archaic idea, but don't we accept a version of this?
 

@@ -1,7 +1,7 @@
 Title: Virtuosity
 Date: 2011-02-12 22:11
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: exploring, music
 
 *Originally published at: [http://kwontum.blogspot.com/2011/02/None.html](http://kwontum.blogspot.com/2011/02/None.html)*
 

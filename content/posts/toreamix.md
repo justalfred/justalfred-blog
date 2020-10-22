@@ -1,7 +1,7 @@
 Title: ToreAmix
 Date: 2011-09-17 05:53
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: music
 
 *Originally published at: [http://kwontum.blogspot.com/2011/09/None.html](http://kwontum.blogspot.com/2011/09/None.html)*
 

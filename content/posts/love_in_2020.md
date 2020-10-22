@@ -1,6 +1,6 @@
 Title: The Art of Loving in 2020
 Date: 2020-09-28
-Tags: humans
+Tags: explaining, exploring, living, music
 Author: Just Alfred
 Summary: When we cannot trust the powers that be, we can turn to our own radical powers to Love.
 

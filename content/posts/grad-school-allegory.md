@@ -1,7 +1,7 @@
 Title: Grad School Allegory
 Date: 2011-02-19 17:59
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: music
 
 *Originally published at: [http://kwontum.blogspot.com/2011/02/None.html](http://kwontum.blogspot.com/2011/02/None.html)*
 

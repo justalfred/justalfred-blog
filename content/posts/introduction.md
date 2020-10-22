@@ -1,6 +1,6 @@
 Title: Introduction
 Date: 2015-01-02
-Tags: info
+Tags: living
 Author: Just Alfred
 Summary: Welcome to my new blog.
 

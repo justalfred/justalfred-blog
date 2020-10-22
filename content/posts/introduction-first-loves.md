@@ -1,7 +1,7 @@
 Title: Introduction, first loves
 Date: 2010-11-28 06:30
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: living, music
 
 *Originally published at: [http://kwontum.blogspot.com/2010/11/None.html](http://kwontum.blogspot.com/2010/11/None.html)*
 

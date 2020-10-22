@@ -1,6 +1,6 @@
 Title: Der Tod und Der Atheist
 Date: 2016-01-30
-Tags: humans
+Tags: art
 Author: Just Alfred
 Summary: Derivative Poetry.
 

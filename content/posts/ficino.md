@@ -1,6 +1,6 @@
 Title: Renaissance Role Models
 Date: 2016-03-26
-Tags: humans
+Tags: art, exploring, living
 Author: Just Alfred
 Summary: A model of role models from a Renaissance ideal.
 

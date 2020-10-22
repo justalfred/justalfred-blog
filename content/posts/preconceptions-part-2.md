@@ -1,7 +1,7 @@
 Title: Preconceptions Part 2
 Date: 2013-05-10 01:19
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: music
 Slug: preconceptions-part-2
 
 *Originally published at: [http://kwontum.blogspot.com/2013/05/preconceptions-part-2.html](http://kwontum.blogspot.com/2013/05/preconceptions-part-2.html)*

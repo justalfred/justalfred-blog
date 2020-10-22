@@ -1,7 +1,7 @@
 Title: A Little Night-Food Music
 Date: 2013-03-12 01:23
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: music
 Slug: a-little-night-food-music
 
 *Originally published at: [http://kwontum.blogspot.com/2013/03/a-little-night-food-music.html](http://kwontum.blogspot.com/2013/03/a-little-night-food-music.html)*

@@ -1,7 +1,7 @@
 Title: Hypotheses Part 2
 Date: 2013-08-21 14:08
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Science
+Tags: exploring, science
 Slug: hypotheses-part-2
 
 *Originally published at: [http://kwontum.blogspot.com/2013/08/hypotheses-part-2.html](http://kwontum.blogspot.com/2013/08/hypotheses-part-2.html)*

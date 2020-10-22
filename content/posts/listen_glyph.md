@@ -1,6 +1,6 @@
 Title: To Listen
 Date: 2018-02-24
-Tags: literature
+Tags: exploring, living
 Author: Just Alfred
 Summary: Culture in One Character
 

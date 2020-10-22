@@ -1,6 +1,6 @@
 Title: Excerpts of 2016
 Date: 2017-01-01
-Tags: humans
+Tags: living
 Author: Just Alfred
 Summary: My year via excerpts from my personal writing
 

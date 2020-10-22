@@ -1,6 +1,6 @@
 Title: Present
 Date: 2017-01-10
-Tags: humans
+Tags: art, living, thinking
 Author: Just Alfred
 Summary: Present
 

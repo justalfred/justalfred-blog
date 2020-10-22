@@ -1,7 +1,7 @@
 Title: Does Not Compute
 Date: 2013-10-04 00:30
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Code
+Tags: explaining, tech
 Slug: does-not-compute
 
 *Originally published at: [http://kwontum.blogspot.com/2013/10/does-not-compute.html](http://kwontum.blogspot.com/2013/10/does-not-compute.html)*

@@ -1,6 +1,6 @@
 Title: The Weak Weak Anthropic Principle
 Date: 2017-12-02
-Tags: science
+Tags: explaining, science, thinking
 Author: Just Alfred
 Summary: Reality doesn't care about your beliefs.
 

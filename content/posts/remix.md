@@ -1,7 +1,7 @@
 Title: Remix
 Date: 2011-09-17 01:50
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: explaining, music
 
 *Originally published at: [http://kwontum.blogspot.com/2011/09/None.html](http://kwontum.blogspot.com/2011/09/None.html)*
 

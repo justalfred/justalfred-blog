@@ -1,7 +1,7 @@
 Title: PyGotham 2016
 Date: 2016-07-20
 Author: Just Alfred
-Tags: Code
+Tags: explaining, tech
 Summary: A talk I gave. Not exciting. Maybe useful.
 
 I wish I could make all this prettier, but I gave a talk at

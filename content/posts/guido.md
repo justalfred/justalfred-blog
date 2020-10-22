@@ -1,7 +1,7 @@
 Title: Guido
 Date: 2013-11-16 20:12
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: explaining, music
 Slug: guido
 
 *Originally published at: [http://kwontum.blogspot.com/2013/11/guido.html](http://kwontum.blogspot.com/2013/11/guido.html)*

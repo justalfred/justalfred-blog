@@ -1,7 +1,7 @@
 Title: The People's House
 Date: 2011-10-19 17:39
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music
+Tags: music
 
 *Originally published at: [http://kwontum.blogspot.com/2011/10/None.html](http://kwontum.blogspot.com/2011/10/None.html)*
 

@@ -1,6 +1,6 @@
 Title: Discoveries (I)
 Date: 2017-10-29
-Tags: humans
+Tags: art, exploring, living
 Author: Just Alfred
 Summary: Reporting on my quest
 

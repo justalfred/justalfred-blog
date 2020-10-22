@@ -1,6 +1,6 @@
 Title: My Messages for Meditators
 Date: 2018-03-14
-Tags: humans
+Tags: explaining, exploring, living
 Author: Just Alfred
 Summary: I'm still beginning, but I have thoughts.
 

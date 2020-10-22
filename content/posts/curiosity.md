@@ -1,6 +1,6 @@
 Title: The Role and Importance of Curiosity in Data Science
 Date: 2018-04-02
-Tags: humans, code
+Tags: explaining, tech, thinking
 Author: Just Alfred
 Summary: I keep hearing curiosity is important in data science. I wonder why....
 

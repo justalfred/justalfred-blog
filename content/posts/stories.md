@@ -1,6 +1,6 @@
 Title: Stories
 Date: 2015-07-09
-Tags: humans
+Tags: living
 Author: Just Alfred
 Summary: The time evolution of the truth of the stories we tell
 

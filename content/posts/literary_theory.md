@@ -1,6 +1,6 @@
 Title: Literary Theory
 Date: 2018-02-19
-Tags: literature, humans, science
+Tags: BISR, art, exploring, living
 Author: Just Alfred
 Summary: Is to understand literature to understand society?
 

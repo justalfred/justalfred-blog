@@ -1,6 +1,6 @@
 Title: I Am Not Who I Was
 Date: 2017-12-14
-Tags: humans
+Tags: exploring, living, thinking
 Author: Just Alfred
 Summary: We change. Sometimes radically. What does that mean?
 

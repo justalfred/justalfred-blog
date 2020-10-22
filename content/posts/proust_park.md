@@ -1,6 +1,6 @@
 Title: Proust in the Park
 Date: 2015-07-20
-Tags: humans
+Tags: living
 Author: Just Alfred
 Summary: In search of lost that's the same dog from I hear a soprano, is she over there or whoa those people are naked
 

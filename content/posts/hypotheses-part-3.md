@@ -1,7 +1,7 @@
 Title: Hypotheses Part 3
 Date: 2013-12-16 03:39
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Science
+Tags: exploring, living
 Slug: hypotheses-part-3
 
 *Originally published at: [http://kwontum.blogspot.com/2013/12/hypotheses-part-3.html](http://kwontum.blogspot.com/2013/12/hypotheses-part-3.html)*

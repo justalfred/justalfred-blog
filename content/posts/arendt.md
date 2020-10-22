@@ -1,6 +1,6 @@
 Title: Hannah Arendt: Violence, Happiness, and Freedom
 Date: 2018-08-07
-Tags: humans
+Tags: BISR, exploring, living, thinking
 Author: Just Alfred
 Summary: For my first taste of political theory, I chose quite the controversial thinker. But she was a thinker par excellence.
 

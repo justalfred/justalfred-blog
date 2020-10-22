@@ -1,6 +1,6 @@
 Title: Wandering Thoughts About Artificial Intelligence
 Date: 2019-02-18
-Tags: humans
+Tags: BISR, art, explaining, exploring, tech, thinking
 Author: Just Alfred
 Summary: I have been reading and learning, and have not done enough writing.
          Here's a bit of what I've been thinking about over the past year.

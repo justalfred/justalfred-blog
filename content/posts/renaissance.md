@@ -1,7 +1,7 @@
 Title: Renaissance
 Date: 2013-02-11 01:57
 Author: Just Alfred
-Tags: The Classical-Kwontum Interface, Music, info
+Tags: music, tech
 
 *Originally published at: [http://kwontum.blogspot.com/2013/02/None.html](http://kwontum.blogspot.com/2013/02/None.html)*
 

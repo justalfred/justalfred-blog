@@ -1,7 +1,7 @@
 Title: Affirmations
 Date: 2019-08-11
 Modified: 2020-03-22
-Tags: humans, code
+Tags: exploring, living
 Author: Just Alfred
 Summary: A structured visualization of the person I strive to be.
 
