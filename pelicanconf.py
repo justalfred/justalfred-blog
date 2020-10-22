@@ -13,6 +13,8 @@ DEFAULT_DATE_FORMAT = '(%a) %Y-%m-%d'
 
 DEFAULT_LANG = 'en'
 
+CC_LICENSE = 'CC-BY-SA'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
