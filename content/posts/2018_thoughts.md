@@ -98,10 +98,10 @@ How should we then respond as humans?
 
 # Episode: Frankenstein
 I re-read Mary Shelley’s Frankenstein at the start of last year for a class on
-[Literary Theory]({filename}../literature/literary_theory.md),
+[Literary Theory]({filename}literary_theory.md),
 a highlight of the year.[^4]
 Between this class and the one on
-[Poetry and Poetics]({filename}../literature/poetry_and_poetics.md),
+[Poetry and Poetics]({filename}poetry_and_poetics.md),
 I feel I’ve only just learned to read.
 Whatever drew me to the book as a teenager
 (certainly not my relating to an eloquent, powerful, but persecuted creature—that would be embarrassing)

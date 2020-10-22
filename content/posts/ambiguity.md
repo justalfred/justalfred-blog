@@ -12,7 +12,7 @@ Summary: When the answer isn't clear, it might mean it doesn't need to be.
 <figure>
 </div>
 
-[A little while back]({filename}/literature/literary_theory.md), I tried to illustrate the value of accepting ambiguity via Emily Dickinson and Jacob Bronowski.
+[A little while back]({filename}literary_theory.md), I tried to illustrate the value of accepting ambiguity via Emily Dickinson and Jacob Bronowski.
 Poetry and Science.
 This topic bears expansion, so now I expand.
 I’ve said very little to data scientists to date, even though it’s my field.

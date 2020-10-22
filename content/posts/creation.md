@@ -19,7 +19,7 @@ this is not one I come back to.
 Disappointed, not surprised.
 
 Speaking of boring, I think also of Wagner’s Ring Cycle, though I do frequently
-[return]({filename}/music/preconceptions-part-1.md)
+[return]({filename}preconceptions-part-1.md)
 to this one.
 Here, 16 hours of music and drama [begin](https://www.youtube.com/watch?v=rjP7R0UQjGE)
 with 16 bars of a gentle, low E-flat.
